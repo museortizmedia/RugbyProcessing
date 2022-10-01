@@ -7,7 +7,8 @@ public class tacle : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
-        {            
+        {
+            gameController.instancia.Shake();
             gameController.instancia.gameover=true;
         }
     }
