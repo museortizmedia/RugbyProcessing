@@ -36,6 +36,7 @@ public class gameController : MonoBehaviour
             }
 Destroy(EnemiesSpawner);
             Player.GetComponent<Animator>().SetBool("muerte", true);
+            Player.GetComponent<AudioSource>().Play();
             GameOver();            
         }
     }
