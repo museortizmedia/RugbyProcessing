@@ -34,7 +34,7 @@ public class TCPPlayer : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(transform.position.x);
+        //Debug.Log(transform.position.x);
 
         leerDatosProcessing();
         float elX = tcpX + tcpxCorrection * sensbility;

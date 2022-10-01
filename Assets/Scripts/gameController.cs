@@ -29,14 +29,13 @@ public class gameController : MonoBehaviour
     {
         if (gameover)
         {
-            //sonido tacle exitoso
-            for (var i = EnemiesSpawner.transform.childCount - 1; i >= 0; i--)
+            Player.GetComponent<AudioSource>().Play();
+            /*for (var i = EnemiesSpawner.transform.childCount - 1; i >= 0; i--)
             {
                 Object.Destroy(EnemiesSpawner.transform.GetChild(i).gameObject);
-            }
-Destroy(EnemiesSpawner);
+            }*/
+            if (EnemiesSpawner) { Destroy(EnemiesSpawner); }
             Player.GetComponent<Animator>().SetBool("muerte", true);
-            Player.GetComponent<AudioSource>().Play();
             GameOver();            
         }
     }
