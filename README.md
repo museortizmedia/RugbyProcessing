@@ -177,4 +177,6 @@ void mousePressed() {
     //marcadorRojo = pixelLeido;
 }
 ```
+
+## Licencia
 Los gráficos usados en este proyecto NO NOS PERTENECEN, hacen parte del videojuego Rugby Rush de Code This Lab S.r.l. para Android. Los audios son extraidos de librerías libres. El código es autoría propia y el fragmento de processing es librería de la Universidad Autónoma de Occidente.
